@@ -18,7 +18,7 @@ body {
   left: 0;
   border-top: 3px solid #f48024;
   z-index: 5050;
-  box-shadow: var(--bs-sm);
+  box-shadow: 1px 1px 1px rgba(73, 50, 50, 0.6);
   background-color: #fafafb;
   box-sizing: border-box;
   border-bottom: 1px solid lightgray;
@@ -102,7 +102,7 @@ body {
 }
 .search_bar #search_field .search_elements:focus {
   border-color: #6cbbf7;
-  box-shadow: 0 0 0 4px rgba(0, 149, 255, 0.15);
+  box-shadow: 0 0 0 6px rgba(165, 167, 168, 0.15);
 }
 #search_icon {
   position: absolute;
@@ -124,7 +124,7 @@ body {
   cursor: pointer;
   border: 1px transparent;
   height: 30px;
-  left: 30px;
+  left: 40px;
 }
 .items:hover {
   background-color: lightgray;
@@ -146,6 +146,8 @@ body {
 }
 .side_bar a {
   text-decoration: none;
+  opacity: .5;
+  color: black;
 }
 .side_bar {
   position: fixed;
@@ -154,6 +156,7 @@ body {
   box-sizing: border-box;
   border-right: 1px solid lightgray;
   padding: 40px;
+  z-index: 1;
 }
 
 #home_button {
@@ -165,15 +168,30 @@ body {
 
 #stack_button {
   margin-top: 6px;
-  padding-left: 18px;
+  display: flex;
 }
 #stack_list li {
   list-style-type: none;
   margin-top: 5px;
   width: 127px;
-  border-right: 3px solid white;
+  
 }
 
 #stack_list li:focus {
-  border-right-color: #f48024;
+  border-right: 3px solid #f48024;
+  font-weight: bold;
+}
+#stack_button_text{
+  position: relative;
+    left: 2px;
+    top: -4px;
+}
+#trial{
+  margin-top: 8px;
+
+}
+#trail_text{
+  left: 24px;
+    position: relative;
+    top: -18px;
 }
