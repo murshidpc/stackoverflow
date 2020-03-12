@@ -4,6 +4,7 @@
   <title>StackOverflow</title>
   <link type="image/png" rel="shortcut icon" href="./favicon-32x32.png" />
   <link rel="stylesheet" href="./style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -123,66 +124,75 @@
         </a></li>
     </ol>
   </div>
-  <div>
-    <div>
-      <div>
-        <a href="#">Profile</a>
-        <a href="#">Activity</a>
-        <a href="#">Developer Story</a>
-        <a href="#">Edit profile and settings </a>
+  <div class="main_container">
+    <div class="container">
+      <div class="container_header">
+        <div class="conatiner_nav_items">
+          <a class="navbar_item" id="profile" href="#">Profile</a>
+          <a class="navbar_item" id="activity" href="#">Activity</a>
+          <a class="navbar_item" id="dstory" href="#">Developer Story</a>
+          <a class="navbar_item" id="edit_prof" href="#">Edit profile and settings </a>
+        </div>
+        <div id="conatiner_network">
+          <a href="#">Network profile</a></li>
+        </div>
       </div>
-      <div>
-        <a href="#">NetWork</a></li>
+      <div class="container_profile">
+        <div id="container_profile_image">
+          <div>
+            <img id="profile_image2" src="https://lh3.googleusercontent.com/a-/AAuE7mAYa4hGLnG4V0SbRMuqSfsjHT907bApz8oHimSlZg=k-s328" height="164px" width="164px" >
+          </div>
+        </div>
+        <div class="reputation_conatainer">
+          <div id="reputation_no">
+            1
+          </div>
+          <div id="reputation_text">
+            REPUTATION
+          </div>
+        </div>
       </div>
-    </div>
-    <div>
-      <div>
-        <img src="https://lh3.googleusercontent.com/a-/AAuE7mAYa4hGLnG4V0SbRMuqSfsjHT907bApz8oHimSlZg=k-s328">
-      </div>
-      <div>
-        1
-      </div>
-    </div>
-    <div>
-      <div>
-        <h2>Murshid Pc</h2>
-        <p>Student at college of engineering trivandrum</p>
-        <p>(Your <i>about me</i> is currently blank.)</p>
-        <a href="#">Click here to edit</a>
-      </div>
-      <div>
-        <ul>
-          <li><a href="#">
-              <svg>
-                <path d=""></path>
-              </svg>
-              <span>Kozhikode, Kerala, India</span>
-            </a></li>
-          <li><a href="#">
-              <svg>
-                <path d=""></path>
-              </svg>
-              <span>Member for 6 months</span>
-            </a></li>
-          <li><a href="#">
-              <svg>
-                <path d=""></path>
-              </svg>
-              <span>0 profile views</span>
-            </a></li>
-          <li><a href="#">
-              <svg>
-                <path d=""></path>
-              </svg>
-              <span>Last seen 6 secs ago</span>
-            </a></li>
-          <li><a href="#">
-              <svg>
-                <path d=""></path>
-              </svg>
-              <span>Visited 36 days, 3 consecutive</span>
-            </a></li>
-        </ul>
+      <div class="container_profile_details">
+        <div id="details">
+          <h2 id="name">Murshid Pc</h2>
+          <p id="college">Student at college of engineering trivandrum</p>
+          <p id="about">(Your <i>about me</i> is currently blank.)</p>
+          <a id="edit" href="#">Click here to edit</a>
+        </div>
+        <div class="profile_details">
+          <ul class="details_list">
+            <li class="detail_items"><a href="#">
+                <svg width="18" height="18" viewBox="0 0 18 18">
+                  <path d="M2 6.38C2 9.91 8.1 17.7 8.1 17.7c.22.29.58.29.8 0 0 0 6.1-7.8 6.1-11.32A6.44 6.44 0 0 0 8.5 0 6.44 6.44 0 0 0 2 6.38zm9.25.12a2.75 2.75 0 1 1-5.5 0 2.75 2.75 0 0 1 5.5 0z"></path>
+                </svg>
+                <span class="items_">Kozhikode, Kerala, India</span>
+              </a></li>
+            <li class="detail_items"><a href="#">
+                <svg width="19" height="18" viewBox="0 0 19 18">
+                  <path d="M3 9a8 8 0 1 1 3.73 6.77L8.2 14.3A6 6 0 1 0 5 9l3.01-.01-4 4-4-4h3L3 9zm7-4h1.01L11 9.36l3.22 2.1-.6.93L10 10V5z"></path>
+                </svg>
+                <span class="items_">Member for 6 months</span>
+              </a></li>
+            <li class="detail_items"><a href="#">
+                <svg width="18" height="18" viewBox="0 0 18 18">
+                  <path d="M9.06 3C4 3 1 9 1 9s3 6 8.06 6C14 15 17 9 17 9s-3-6-7.94-6zM9 13a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0-2a2 2 0 0 0 2-2 2 2 0 0 0-2-2 2 2 0 0 0-2 2 2 2 0 0 0 2 2z"></path>
+                </svg>
+                <span class="items_">0 profile views</span>
+              </a></li>
+            <li class="detail_items"><a href="#">
+                <svg width="18" height="18" viewBox="0 0 18 18">
+                  <path d="M9 17A8 8 0 1 1 9 1a8 8 0 0 1 0 16zm0-2A6 6 0 1 0 9 3a6 6 0 0 0 0 12zM8 5h1.01L9 9.36l3.22 2.1-.6.93L8 10V5z"></path>
+                </svg>
+                <span class="items_">Last seen 6 secs ago</span>
+              </a></li>
+            <li class="detail_items"><a href="#">
+                <svg width="18" height="18" viewBox="0 0 18 18">
+                  <path d="M14 2h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4c0-1.1.9-2 2-2h1V0h2v2h6V0h2v2zM3 6v9h12V6H3zm2 2h2v2H5V8zm0 3h2v2H5v-2zm3 0h2v2H8v-2zm3 0h2v2h-2v-2zm0-3h2v2h-2V8zM8 8h2v2H8V8z"></path>
+                </svg>
+                <span class="items_">Visited 36 days, 3 consecutive</span>
+              </a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
