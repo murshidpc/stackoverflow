@@ -8,7 +8,7 @@
 </head>
 
 <body>
-  <header class="header .bs-sm">
+  <header class="header">
     <div class="header_elements">
       <div class="logo">
         <img id="stack_logo" src="./so-logo.png" alt="stackOverflow" width="150px" height="40px" />
@@ -83,14 +83,14 @@
     </div>
   </header>
   <div class="side_bar">
-    <ol style="width: 100%;">
+    <ol style="width: 100%; margin-top: 45px;">
       <li id="home_button">
-        <a href="#">Home</a>
+        <a href="#" class="hover_change_sidebar">Home</a>
       </li>
       <li id="public_button" style="font-size: 11.5px; opacity: .5;">PUBLIC</li>
-      <li id="stack_button">
-        <a>
-          <svg width="18" height="18" viewBox="0 0 18 18">
+      <li id="stack_button"  >
+        <a href="#"  class="hover_change_sidebar" style="color: black; opacity: .5;" >
+          <svg width="18" height="18" viewBox="0 0 18 18" >
             <path
               d="M9 1a8 8 0 1 0 0 16A8 8 0 0 0 9 1zM8 15.32a6.4 6.4 0 0 1-5.23-7.75L7 11.68v.8c0 .88.12 1.32 1 1.32v1.52zm5.72-2c-.2-.66-1-1.32-1.72-1.32h-1v-2c0-.44-.56-1-1-1H6V7h1c.44 0 1-.56 1-1V5h2c.88 0 1.4-.72 1.4-1.6v-.33a6.4 6.4 0 0 1 2.32 10.24v.01z">
             </path>
@@ -108,19 +108,19 @@
           <a href="#">Jobs</a>
         </li>
       </ol>
-      <li>
-        <a href="#">TEAMS</a>
+      <li style="margin-top:25px">
+        <a >TEAMS</a>
         <span style="font-size: 10px; padding-left: 60px;"><a>Whats this?</a></span>
       </li>
       <li id="trial"><a href="#">
           <div style="width:18px; height: 18px; background-color: #f48042;">
-            <svg width="18px" height="18px" viewBox="0 0 14 14">
+            <svg width="18px" height="18px" viewBox="0 0 14 14" fill="#fff">
               <path
                 d="M4 3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1h.5c.83 0 1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5h-7A1.5 1.5 0 0 1 2 10.5v-5C2 4.67 2.67 4 3.5 4H4V3zm5 1V3H5v1h4z">
               </path>
             </svg>
           </div>
-          <span id="trail_text">Free 30 Day Trial</span>
+          <span id="trail_text" class="hover_change_sidebar">Free 30 Day Trial</span>
         </a></li>
     </ol>
   </div>
@@ -133,8 +133,11 @@
           <a class="navbar_item" id="dstory" href="#">Developer Story</a>
           <a class="navbar_item" id="edit_prof" href="#">Edit profile and settings </a>
         </div>
-        <div id="conatiner_network">
-          <a href="#">Network profile</a></li>
+        <div id="conatiner_network" style="display: flex;">
+          <div class="community_favicon">
+
+          </div>
+          <a href="#" style="margin-left: 5px;margin-top: -5px;color: royalblue;">Network profile</a></li>
         </div>
       </div>
       <div class="container_profile">
@@ -153,9 +156,9 @@
         </div>
       </div>
       <div class="container_profile_details">
-        <div id="details">
+        <div id="details" style="margin-top:30px">
           <h2 id="name">Murshid Pc</h2>
-          <p id="college">Student at college of engineering trivandrum</p>
+          <p id="college" >Student at college of engineering trivandrum</p>
           <p id="about">(Your <i>about me</i> is currently blank.)</p>
           <a id="edit" href="#">Click here to edit</a>
         </div>
@@ -192,14 +195,82 @@
                 <span class="items_">Visited 36 days, 3 consecutive</span>
               </a></li>
           </ul>
+        </div>        
+      </div>
+      <div id="side_bar_container">
+      <div id="side_bar_container1">
+        <div id="community_div">
+          <a id="community_">
+            <!-- <svg width="18" height="18" viewBox="0 0 18 18">
+              <path d=""></path>
+            </svg> -->
+            <div style="display: flex; margin-bottom: 7px;">
+              <div class="community_favicon">
+
+              </div>
+              <div style="margin-left: 4px;">
+                <span id="community_div_text1">Communities</span>
+                <span id="community_no">(1)</span>
+              </div>    
+            </div>
+                    
+          </a>
+        </div>
+        <div id="stackoverflow_div">
+         <div id="stackoverflow_link_div">
+           <a href="#" id="stackoverflow_link">
+            <!-- <svg width="18" height="18" viewBox="0 0 18 18">
+               <path d=""></path>
+             </svg> -->
+             <div style="display: flex;">
+              <div id="stackoverflow_fevicons">
+
+              </div>
+              <div style="display: flex;">
+                <span id="stackoverflow_text">Stack Overflow</span>
+                <div id="stackoverflow_no">1</div>
+              </div>
+             </div>
+             
+           </a>
+         </div>
+         <div id="edit_div">
+           <a href="#" id="edit_link">
+             Edit list
+           </a>
+         </div>
         </div>
       </div>
-    </div>
+      <div  id="side_bar_container2">
+        <div id="network_div">
+          <a style="font-weight: bold;font-size: 14; color: black;">Top Network Posts</a>
+        </div>
+        <div id="network_div_text">
+          <p style="color: grey;">Like this site? Check out our other awesome communities:</p>
+        </div>
+        <div id="community_link_div">
+          <a  href="#" id="community_div1">See all communities</a>
+        </div>
+      </div>
+      </div>
+      <div id="question_container">
+        <div id="error_image_div">
+          
+        </div>
+        <div id="error_div">
+          <div id="error_header">
+            <a style="font-size: 18px;">Just getting started? Try answering a question!</a>
+          </div>
+          <div id="error_message">
+            Your most helpful questions, answers and tags will appear here. Start by <a>answering a question</a> or <a>selecting tags</a> that match topics you're interested in.
+          </div>
+        </div>
+      </div>
+    </div>    
   </div>
-  <div id="other" style="background-color: antiquewhite; width:100%; height:50px">
 
-  </div>
-  <footer class="footer_container">
+  
+ <footer class="footer_container"> 
     <div class="footer_elements">
       <div id="footer_logo">
        <a href="#">
@@ -212,7 +283,7 @@
       <nav id="footer_nav_items">
         <div id="stackoverfow_items">
           <h5>STACK OVERFLOW</h5>
-          <ul id="stackoverfow_items_list">
+          <ul id="stackoverfow_items_list" style="padding-left: 21px;">
             <li><a href="#">Questions</a></li>
             <li><a href="#">Jobs</a></li>
             <li><a href="#">Developer Jobs Directory</a></li>
@@ -222,18 +293,18 @@
             <li><a href="#">Disable Responsiveness</a></li>
           </ul>
         </div>
-        <div id="stack_items">
-          <h5>PRODUCTS</h5>
-          <ul id="stack_items_list">
+        <div id="stack_items" style="margin-left: 100px;">
+          <h5 class="foot_head">PRODUCTS</h5>
+          <ul id="stack_items_list" style="padding-left: 19px;">
             <li><a href="#">Teams</a></li>
             <li><a href="#">Talent</a></li>
             <li><a href="#">Advertising</a></li>
             <li><a href="#">Enterprise</a></li>
           </ul>
         </div>
-        <div id="company_items">
-          <h5>COMPANY</h5>
-          <ul id="company_items_list">
+        <div id="company_items"  style="margin-left: 100px;">
+          <h5 class="foot_head">COMPANY</h5>
+          <ul id="company_items_list" style="padding-left: 21px;">
             <li><a href="#">About</a></li>
             <li><a href="#">Press</a></li>
             <li><a href="#">Work Here</a></li>
@@ -242,10 +313,10 @@
             <li><a href="#">Contact Us</a></li>
           </ul>
         </div>
-        <div id="stackexchange_items">
-          <h5>STACK EXCHANGE
+        <div id="stackexchange_items"  style="margin-left: 100px;">
+          <h5 class="foot_head">STACK EXCHANGE<br/>
             NETWORK</h5>
-          <ul id="stackexchange_items_list">
+          <ul id="stackexchange_items_list" style="padding-left: 21px;">
             <li><a href="#">Technology</a></li>
             <li><a href="#">Life / Arts</a></li>
             <li><a href="#">Culture / Recreation</a></li>
@@ -262,13 +333,13 @@
           <li>Linkedln</li>
         </ul>
         <p id="license">
-          site design / logo © 2020 Stack Exchange Inc; user contributions
-          licensed under <a>cc by-sa 4.0</a> with <a>attribution required</a>.
+          site design / logo © 2020 Stack Exchange Inc; user contributions<br/>
+          licensed under <a>cc by-sa 4.0</a> with <a>attribution required</a>.<br/>
           rev 2020.3.11.36249
         </p>
       </div>
     </div>
-  </footer>
+  </footer>   
 </body>
 
 </html>
