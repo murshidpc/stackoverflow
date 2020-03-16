@@ -162,10 +162,10 @@ body {
 .side_bar {
   position: fixed;
   width: 210px;
-  height: 500px;
+  height: 100%;
   box-sizing: border-box;
   border-right: 1px solid lightgray;
-  z-index: 1;
+  z-index: 200;
 }
 
 #home_button {
@@ -239,15 +239,17 @@ body {
 .container {
   position: absolute;
   top: 31px;
-  left: 16px;
+  left: -228px;
   width: 100%;
 }
 .container_header {
   display: flex;
-  width: 989px;
+  width: 1014px;
   line-height: 2;
   height: 40px;
   border-bottom: 1px solid lightgray;
+  position: relative;
+  left: 200px;
 }
 .conatiner_nav_items {
   width: 465px;
@@ -261,6 +263,7 @@ body {
   border-radius: 4px;
   background-size: 50% auto;
   background-color: #e8e8e8;
+  margin-left: 225px;
 }
 .container_profile_image {
   padding-left: 18px;
@@ -383,6 +386,7 @@ body {
   width: 20%;
   height: fit-content;
   margin-top: 39px;
+  margin-left: 228px;
 }
 #side_bar_container a {
   color: #6cbbf7;
@@ -451,6 +455,7 @@ body {
   left: 252px;
   bottom: 220px;
   text-align: center;
+  margin-left: 212px;
   border-top: 1px solid lightgrey;
 }
 #error_image_div {
@@ -473,7 +478,7 @@ body {
   position: absolute;
   top: 900px;
   bottom: 0;
-  z-index: 100;
+  z-index: 300;
   width: 100%;
 }
 .footer_elements {
